@@ -1,0 +1,23 @@
+{
+  "name": "natours-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./assets/styles/sass/main.scss ./assets/styles/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vyassuresh/natours-project.git"
+  },
+  "author": "Suresh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vyassuresh/natours-project/issues"
+  },
+  "homepage": "https://github.com/vyassuresh/natours-project#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
