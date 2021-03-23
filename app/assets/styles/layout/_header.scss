@@ -4,7 +4,7 @@
         linear-gradient(to right bottom,
             rgba($light-green, 0.8),
             rgba($dark-green, 0.8)),
-        url('../../assets/images/hero.jpg');
+        resolve('hero.jpg');
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -24,28 +24,5 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-    }
-}
-
-.heading-primary {
-    color: $color-white;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: rem(60px);
-    font-weight: 400;
-
-    &--main {
-        display: block;
-        font-size: rem(60px);
-        letter-spacing: rem(35px);
-        animation: moveInLeft 1s ease-out;
-    }
-
-    &--sub {
-        display: block;
-        font-size: rem(20px);
-        letter-spacing: rem(17.5px);
-        font-weight: 700;
-        animation: moveInRight 1s ease-out;
     }
 }

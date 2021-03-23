@@ -54,4 +54,25 @@
     &--animated {
         animation: moveInBottom 0.5s ease-out .75s backwards
     }
+
+}
+
+.btn-text {
+
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-decoration: none;
+        padding: rem(5px) rem(10px);
+        border: $light-green 1px solid;
+        color: $light-green;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:hover, &:focus {
+        color: $color-white;
+        background-color: $light-green;
+        transform: translateY(rem(-3px));
+        box-shadow: 0 rem(10px) rem(20px) rgba($color-black, 0.2);
+    }
 }
