@@ -1,0 +1,130 @@
+.card {
+    width: 100%;
+    height: rem(520);
+    perspective: 1000px;
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__side {
+        height: rem(520);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 0 rem(15) rem(40) rgba($color-black, 0.15);
+        border-radius: 5px;
+        overflow: hidden;
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &--1 {
+                background: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark)
+            }
+
+            &--2 {
+                background: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark)
+            }
+
+            &--3 {
+                background: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark)
+            }
+        }
+    }
+
+    &__picture {
+        height: rem(230);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        background-blend-mode: screen;
+        background-size: cover;
+
+        &--1 {
+            background-image: linear-gradient($color-secondary-light, $color-secondary-dark), resolve('nat-5.jpg')
+        }
+
+        &--2 {
+            background-image: linear-gradient($color-tertiary-light, $color-tertiary-dark),
+            resolve('nat-6.jpg')
+        }
+
+        &--3 {
+            background-image: linear-gradient($color-primary-light, $color-primary-dark),
+            resolve('nat-7.jpg')
+        }
+    }
+
+    &__heading {
+        font-size: rem(28);
+        text-transform: uppercase;
+        font-weight: 300;
+        position: absolute;
+        top: rem(120);
+        right: rem(30);
+        width: 75%;
+        text-align: right;
+        color:$color-white;
+
+        &-span {
+            padding: rem(10) rem(15);
+            box-decoration-break: clone;
+
+            &--1 {
+                background: linear-gradient($color-secondary-light, $color-secondary-dark)
+            }
+
+            &--2 {
+                background: linear-gradient($color-tertiary-light, $color-tertiary-dark)
+            }
+
+            &--3 {
+                background: linear-gradient($color-primary-light, $color-primary-dark)
+            }
+        }
+    }
+
+    ul {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        font-size: rem(15);
+        margin-top: rem(30);
+
+        li {
+            list-style: none;
+            padding: rem(10) 0;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba($color-black, 0.1);
+            }
+        }
+    }
+
+    &__price-only {
+        height: 7%;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        height: 35%;
+        font-size: rem(60);
+        font-weight: 100;
+        color: $color-white;
+    }
+}

@@ -51,6 +51,15 @@
         }
     }
 
+    &--green {
+        color: $color-white;
+        background-color: $color-primary;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
     &--animated {
         animation: moveInBottom 0.5s ease-out .75s backwards
     }
@@ -63,15 +72,16 @@
     &:visited {
         display: inline-block;
         text-decoration: none;
-        padding: rem(5px) rem(10px);
-        border: $medium-green 1px solid;
-        color: $medium-green;
+        padding: rem(7px) rem(15px);
+        border: $color-primary 1px solid;
+        color: $color-primary;
         transition: all 0.2s ease-in-out;
+        border-radius: 100px;
     }
 
     &:hover, &:focus {
         color: $color-white;
-        background-color: $medium-green;
+        background-color: $color-primary;
         transform: translateY(rem(-3px));
         box-shadow: 0 rem(10px) rem(20px) rgba($color-black, 0.2);
     }

@@ -27,7 +27,7 @@
         
         &:hover {
             transform: scale(1.05) translateY(-rem(5));
-            outline: $medium-green rem(15) solid;
+            outline: $color-primary rem(15) solid;
             z-index: 10;
         }
     }
