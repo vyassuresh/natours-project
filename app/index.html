@@ -174,30 +174,34 @@
             <div class="u-center-text u-margin-bottom-lg">
                 <h2 class="heading-secondary u-center-text"> We make people genuinely happy</h2>
             </div>
-            <div class="story">
-                <figure class="story__shape">
-                    <img class="story__img" src="assets/images/nat-8.jpg" alt="Person">
-                    <figcaption class="story__caption">Marie Smith</figcaption>
-                </figure>
-                <div class="story__text">
-                    <h3 class="heading-tertiary u-margin-bottom-sm">I had the best week ever with my family</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                        libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam,
-                        ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem
-                        omnis earum qui.</p>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img class="story__img" src="assets/images/nat-8.jpg" alt="Person">
+                        <figcaption class="story__caption">Marie Smith</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-sm">I had the best week ever with my family</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
+                            libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam,
+                            ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem
+                            omnis earum qui.</p>
+                    </div>
                 </div>
             </div>
-            <div class="story">
-                <figure class="story__shape">
-                    <img class="story__img" src="assets/images/nat-9.jpg" alt="Person">
-                    <figcaption class="story__caption">John Doe</figcaption>
-                </figure>
-                <div class="story__text">
-                    <h3 class="heading-tertiary u-margin-bottom-sm">WOW! My life is completely different now</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                        libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam,
-                        ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem
-                        omnis earum qui.</p>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img class="story__img" src="assets/images/nat-9.jpg" alt="Person">
+                        <figcaption class="story__caption">John Doe</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-sm">WOW! My life is completely different now</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
+                            libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam,
+                            ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem
+                            omnis earum qui.</p>
+                    </div>
                 </div>
             </div>
 
@@ -207,11 +211,58 @@
 
         </section>
 
-        <section class="book">
-            <div class="book">
-
+        <section class="section-book">
+            <div class="row">
+                <div class="section-book__form row">
+                    <div class="u-margin-bottom-md">
+                        <h2 class="heading-secondary">Start booking now</h2>
+                    </div>
+                    <form action="#" class="form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" id="fullname" name="fullname" placeholder="Full name"
+                                required>
+                            <label class="form__label" for="fullname">Full name</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" id="email" name="email" placeholder="Email address"
+                                required>
+                            <label class="form__label" for="email">Email address</label>
+                        </div>
+                        <div class="form__group u-margin-bottom-sm">
+                            <div class="form__radio-group">
+                                <input type="radio" name="size" id="small" class="form__radio-input">
+                                <label for="small" class="form__radio-label">Small tour group</label>
+                            </div>
+                            <div class="form__radio-group">
+                                <input type="radio" name="size" id="large" class="form__radio-input">
+                                <label for="large" class="form__radio-label">Big tour group</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
+
+        <footer class="footer">
+            <div class="footer__container row">
+                <div class="footer__logo u-center-text u-margin-bottom-lg">
+                    <img src="assets/images/logo-green-1x.png" alt="Natours green logo">
+                </div>
+                <div class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer__copyright">
+                    This website was designed by <a href="http://jonas.io" class="footer__link">Jonas Shmedtmann</a>. I
+                    have only recreated it using CSS Grid and Flexbox. Credits to the author for design.
+                </div>
+            </div>
+        </footer>
     </main>
 
     <script src="main.js"></script>

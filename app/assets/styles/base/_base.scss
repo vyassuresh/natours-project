@@ -7,7 +7,7 @@ html {
 *::after {
     margin: 0;
     padding: 0;
-    border-style: inherit;
+    box-sizing: inherit;
 }
 
 body {
@@ -15,6 +15,6 @@ body {
     font-weight: 400;
     line-height: 1.7;
     padding: rem(30px);
-    color: #777;
+    color: $color-dark-gray;
     background-color: $color-gray-light-1;
 }
