@@ -2,4 +2,16 @@
     background-color: $color-gray-light-1;
     padding-top: rem(250px);
     margin-top: -20vh;
+    padding-bottom: rem(280);
+}
+
+.section-features {
+    padding: rem(200) 0;
+    background: linear-gradient(to right bottom, rgba($light-green, 0.8), rgba($dark-green, 0.8)), resolve('nat-4.jpg');
+    transform: skewY(-7deg);
+    margin-top: rem(-100);
+
+    & > * {
+        transform: skewY(7deg);
+    }
 }

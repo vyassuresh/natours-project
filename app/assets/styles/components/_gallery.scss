@@ -1,0 +1,38 @@
+.gallery {
+    position: relative;
+    height: 0;
+
+    &__photo {
+        width: 55%;
+        box-shadow: 0 rem(15px) rem(40px) rgba($color-black, 0.2);
+        position: absolute;
+        outline-offset: rem(20px);
+        transition: all 0.2s ease-in-out;
+        z-index: 1;
+
+        &--p1 {
+            top: 0;
+            left: 0;
+        }
+
+        &--p2 {
+            top: rem(40);
+            right: 0;
+        }
+
+        &--p3 {
+            left: rem(100);
+            top: rem(120);
+        }
+        
+        &:hover {
+            transform: scale(1.05) translateY(-rem(5));
+            outline: $medium-green rem(15) solid;
+            z-index: 10;
+        }
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(0.95);
+    }
+}
