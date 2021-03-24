@@ -17,6 +17,11 @@
     }
 }
 
-.section-tours {
+.section-tours, .section-stories {
     padding: rem(150) 0;
+}
+
+.section-stories {
+    padding: rem(150) 0;
+    position: relative;
 }
